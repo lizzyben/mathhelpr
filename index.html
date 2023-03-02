@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My "math" help</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+      }
+
+      #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #title h1 {
+        font-size: 6em;
+        margin: 0;
+        transition: font-size 0.5s ease;
+      }
+
+      #title h1:hover {
+        font-size: 7em;
+      }
+
+      #button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+      }
+
+      .button {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 1em;
+      }
+
+      .button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        filter: blur(20px);
+        z-index: -1;
+      }
+
+      .button:hover:before {
+        background: linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0));
+      }
+
+      .button p {
+        margin: 0;
+        padding: 1em;
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        position: relative;
+        z-index: 1;
+      }
+
+      .button:hover p {
+        color: black;
+      }
+
+      .button:hover {
+        transform: scale(1.1);
+        outline: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      <h1>My "math" help</h1>
+    </div>
+    <div id="button-container">
+      <div class="button" onclick="window.location.href='https://lizzyben.github.io/poopy-games/'">
+        <p>Math games</p>
+      </div>
+      <div class="button" onclick="window.location.href='https://run.plnkr.co/plunks/ZvDM5dcuyr0GBvmQ/'">
+        <p>Proxy</p>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 1em;">
+      <small>
+        <a href="https://edunut.netlify.app/">backup link</a>
+      </small>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My "math" help</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, black, blue);
+        color: white;
+      }
+
+      #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #title h1 {
+        font-size: 6em;
+        margin: 0;
+        transition: font-size 0.5s ease;
+      }
+
+      #title h1:hover {
+        font-size: 7em;
+      }
+
+      #button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+      }
+
+      .button {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0 1em;
+      }
+
+      .button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        z-index: -1;
+        filter: blur(20px);
+      }
+
+      .button:hover:before {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      }
+
+      .button p {
+        margin: 0;
+        padding: 1em;
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        position: relative;
+        z-index: 1;
+      }
+
+      .button:hover p {
+        color: black;
+      }
+
+      #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #menu h2 {
+        margin: 0;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+      #game-container {
+        width: 400px;
+        height: 600px;
+        position: relative;
+      }
+
+      #game-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 1em;
+        border-radius: 20px;
+        display: none;
+      }
+
+      #play-again-button {
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        background: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+
+      #play-again
+<div id="game-menu">
+  <button id="game-btn" onclick="toggleGameMenu()">Play Built-in Game</button>
+  <div id="flappybird-container">
+    <iframe id="flappybird" src="https://mariosouto.com/flappy-bird-dev/" frameborder="0"></iframe>
+  </div>
+</div>
